@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:home_rent_mobile_app/core/theme/theme_data.dart';
-import 'package:home_rent_mobile_app/core/theme/theme_services.dart';
-import 'package:home_rent_mobile_app/features/presentation/views/homepage.dart';
+import 'core/theme/theme_data.dart';
+import 'core/theme/theme_services.dart';
+import 'presentation/views/features/views/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,8 +18,7 @@ class MyApp extends StatelessWidget {
       theme: getAppTheme(ThemeType.LIGHT),
       darkTheme: getAppTheme(ThemeType.DARK),
       themeMode: ThemeMode.system,
-      home:Homepage(),
+      home: Homepage(),
     );
   }
 }
-
